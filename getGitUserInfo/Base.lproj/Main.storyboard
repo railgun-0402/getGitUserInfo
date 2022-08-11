@@ -16,76 +16,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 + 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmx-Cl-mG1">
-                                <rect key="frame" x="190" y="144" width="34" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SHP-87-xTq">
-                                <rect key="frame" x="159.5" y="265" width="95.5" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="合計を表示"/>
-                                <connections>
-                                    <segue destination="yDY-x3-jAt" kind="show" id="ZsS-cY-lpJ"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="pEW-yu-Nhg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="SHP-87-xTq" firstAttribute="top" secondItem="Bmx-Cl-mG1" secondAttribute="bottom" constant="100" id="GeC-47-6sL"/>
-                            <constraint firstItem="SHP-87-xTq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VDT-I4-5tk"/>
-                            <constraint firstItem="Bmx-Cl-mG1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YUJ-5H-Se3"/>
-                            <constraint firstItem="Bmx-Cl-mG1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="pnF-ty-ahf"/>
+                            <constraint firstItem="pEW-yu-Nhg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7fe-Md-R4j"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pEW-yu-Nhg" secondAttribute="trailing" id="Uhr-96-GWK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pEW-yu-Nhg" secondAttribute="bottom" id="ZnY-Oy-MdA"/>
+                            <constraint firstItem="pEW-yu-Nhg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gGO-RV-wP4"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="pEW-yu-Nhg" id="9OK-aG-2wl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139" y="115"/>
-        </scene>
-        <!--Result View Controller-->
-        <scene sceneID="mIh-7L-Q8t">
-            <objects>
-                <viewController modalPresentationStyle="fullScreen" id="yDY-x3-jAt" customClass="ResultViewController" customModule="getGitUserInfo" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="cvf-UN-Xqi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnk-yk-I63">
-                                <rect key="frame" x="186" y="144" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E6s-mP-tXu">
-                                <rect key="frame" x="180.5" y="265" width="53" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="戻る"/>
-                                <connections>
-                                    <segue destination="JZK-sG-pY2" kind="unwind" unwindAction="unwind:" id="Bj1-f7-Dgu"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="hrx-wb-YTG"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="xnk-yk-I63" firstAttribute="centerX" secondItem="cvf-UN-Xqi" secondAttribute="centerX" id="Ymd-15-y4L"/>
-                            <constraint firstItem="E6s-mP-tXu" firstAttribute="centerX" secondItem="cvf-UN-Xqi" secondAttribute="centerX" id="lqK-cZ-IJH"/>
-                            <constraint firstItem="xnk-yk-I63" firstAttribute="top" secondItem="hrx-wb-YTG" secondAttribute="top" constant="100" id="rTU-cZ-u1a"/>
-                            <constraint firstItem="E6s-mP-tXu" firstAttribute="top" secondItem="xnk-yk-I63" secondAttribute="bottom" constant="100" id="sWR-9Z-4Q0"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="M2o-km-Xxc"/>
-                    <connections>
-                        <outlet property="label" destination="xnk-yk-I63" id="RbM-pX-3gn"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i20-Ea-Jbq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="JZK-sG-pY2" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="864" y="115"/>
         </scene>
     </scenes>
     <resources>

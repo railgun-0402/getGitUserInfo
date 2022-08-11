@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B167C8C28A516CD00E74055 /* QiitaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B167C8A28A516CD00E74055 /* QiitaTableViewCell.swift */; };
+		0B167C8D28A516CD00E74055 /* QiitaTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B167C8B28A516CD00E74055 /* QiitaTableViewCell.xib */; };
 		0B36AC6428A4934B009CA39B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B36AC6328A4934B009CA39B /* AppDelegate.swift */; };
 		0B36AC6628A4934B009CA39B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B36AC6528A4934B009CA39B /* SceneDelegate.swift */; };
 		0B36AC6828A4934B009CA39B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B36AC6728A4934B009CA39B /* ViewController.swift */; };
 		0B36AC6B28A4934B009CA39B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B36AC6928A4934B009CA39B /* Main.storyboard */; };
 		0B36AC6D28A4934C009CA39B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B36AC6C28A4934C009CA39B /* Assets.xcassets */; };
 		0B36AC7028A4934C009CA39B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B36AC6E28A4934C009CA39B /* LaunchScreen.storyboard */; };
-		0B36AC7828A49428009CA39B /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B36AC7728A49428009CA39B /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B167C8A28A516CD00E74055 /* QiitaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaTableViewCell.swift; sourceTree = "<group>"; };
+		0B167C8B28A516CD00E74055 /* QiitaTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QiitaTableViewCell.xib; sourceTree = "<group>"; };
 		0B36AC6028A4934B009CA39B /* getGitUserInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = getGitUserInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B36AC6328A4934B009CA39B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0B36AC6528A4934B009CA39B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -25,7 +28,6 @@
 		0B36AC6C28A4934C009CA39B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B36AC6F28A4934C009CA39B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0B36AC7128A4934C009CA39B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0B36AC7728A49428009CA39B /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +61,10 @@
 			isa = PBXGroup;
 			children = (
 				0B36AC6328A4934B009CA39B /* AppDelegate.swift */,
+				0B167C8A28A516CD00E74055 /* QiitaTableViewCell.swift */,
+				0B167C8B28A516CD00E74055 /* QiitaTableViewCell.xib */,
 				0B36AC6528A4934B009CA39B /* SceneDelegate.swift */,
 				0B36AC6728A4934B009CA39B /* ViewController.swift */,
-				0B36AC7728A49428009CA39B /* ResultViewController.swift */,
 				0B36AC6928A4934B009CA39B /* Main.storyboard */,
 				0B36AC6C28A4934C009CA39B /* Assets.xcassets */,
 				0B36AC6E28A4934C009CA39B /* LaunchScreen.storyboard */,
@@ -130,6 +133,7 @@
 			files = (
 				0B36AC7028A4934C009CA39B /* LaunchScreen.storyboard in Resources */,
 				0B36AC6D28A4934C009CA39B /* Assets.xcassets in Resources */,
+				0B167C8D28A516CD00E74055 /* QiitaTableViewCell.xib in Resources */,
 				0B36AC6B28A4934B009CA39B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,8 +147,8 @@
 			files = (
 				0B36AC6828A4934B009CA39B /* ViewController.swift in Sources */,
 				0B36AC6428A4934B009CA39B /* AppDelegate.swift in Sources */,
+				0B167C8C28A516CD00E74055 /* QiitaTableViewCell.swift in Sources */,
 				0B36AC6628A4934B009CA39B /* SceneDelegate.swift in Sources */,
-				0B36AC7828A49428009CA39B /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
